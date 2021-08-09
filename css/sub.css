@@ -1,0 +1,337 @@
+@charset "utf-8";
+@import url(common.css);
+/* @import url(sub.css); */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+/*-------------------사회공헌활동-------------------------*/
+
+
+
+#scrWrap {width:100%; overflow:hidden;}
+#companyUnderline {position:relative;}
+#companyUnderline a::after {
+  position:absolute;
+  /* z-index:99999; */
+  top:30px; left:calc(50% - 35px);
+  width:70px;
+  /* height:5px; */
+  opacity:0.2;
+  content:"";
+  border-bottom:10px solid #006500;
+
+}
+/*나뭇잎*/
+
+#scrWrap .leaf1 {top:-150px; left:-185px;}
+#scrWrap .leaf2 {top:-140px; left:1140px;}
+#scrWrap .leaf3 {top:-265px; left:-338px;}
+
+
+
+/* content 공통 */
+.n {position:absolute;  font-size:150px; font-family:'lobster', cursive; opacity:0.1;}
+h4 {
+  font-size:30px;
+  font-weight:700;
+}
+
+.smallP {
+  position:absolute; top:0; left:0;
+  font-size:15px;
+  font-weight:400;
+  color:#2d6100;
+}
+
+.article {
+  font-size:20px;
+}
+
+/* 아프리카 */
+#waterAfri div.n {top:0; left:-20px;}
+#waterAfri {position:relative; height:635px; width:1088px; margin:240px auto 0;padding-top:150px;}
+#waterAfri .smallP {top:125px;}
+#waterAfri p.article {margin-top:45px;}
+#waterAfri .africaImg {position:absolute; top:-50px; left:560px; opacity:0;}
+
+
+
+/* nanum */
+#nanum div.n {top:-105px; left:20px;}
+#nanum {  width:100%; margin:auto; background:#f3f8eb; height: 310px;}
+#nanumWrap {position:relative; width:920px; height:310px; margin:auto; padding:70px 0 0 323px; box-sizing: border-box;}
+#nanumWrap p.article {margin-top:30px;}
+.nanumImg { position:absolute; top:80px; left:-65px;}
+.nanumMark {position:absolute; width: 100px; top:60px; left:155px; }
+#nanumWrap::before {content:""; width:3px; height:150px; position:absolute; top:calc(50% - 75px); left:295px; border-left:3px solid #969696; }
+
+
+/* hope4Children */
+#hope4Children div.n {top:-50px; left:645px;}
+#hope4Children {width:1200px; margin:auto; height: 400px; position:relative; padding-top:90px; margin-top:260px;}
+#hope4Children .smallP {top:-25px;}
+#hopeWrap {
+  width:533px;
+  transform:translate(667px);
+}
+.hopeKiz {position:absolute; top:0; left:-20px; opacity:0;}
+
+
+#hope4Children p.article {margin-top:50px;}
+
+
+/* worldVision */
+#worldVision div.video {top:-100px; left:calc(50% - 170px);}
+#worldVision {position:relative; width: 100%; height: 310px; background:#f3f8eb; margin:300px 0 265px 0;}
+/*#worldVisionWrap {width:1200px; margin:auto;}*/
+
+#worldVisionTextWrap {
+  width: 775px; height:310px; margin:auto;
+  position:relative;
+  padding: 60px 0 0 415px;
+  box-sizing: border-box;
+}
+#worldVisionTextWrap::before {content:""; width:3px; height:150px; position:absolute; top:calc(50% - 75px); left:50%; border-left:3px solid #969696;}
+
+.worldKid {position:absolute; top:-90px; left:0;  width:270px; opacity:0;}
+#worldVisionWrap p.article {margin-top:25px;}
+#worldVisionTextWrap a {display:block; width:200px; height:50px; background:#000; color:#fff; text-align:center; line-height:50px; margin-top:33px;}
+
+#worldVisionTextWrap a:hover {background:#006500;}
+
+
+/*------------------------material-------------------------*/
+
+
+
+/* main */
+#main {}
+#materialWrap #titleWrap {background-image:url(../images/material.png)}
+
+
+  /* 나뭇잎 */
+
+  #materialWrap .leaf1 {top:-15%; left:-20%;}
+  #materialWrap .leaf2 {top:-35%; left:100%;}
+  #materialWrap .leaf3 {top:-80%; left:-10%;}
+
+
+
+/* bestQuality */
+
+#bestQuality {
+  position:relative;
+  padding-top:105px;
+  width:1100px;
+  height:390px;
+  margin:200px auto;
+}
+#bestQuality .smallP {top:80px;}
+#bestQuality h4 {margin-bottom:25px;}
+
+.bqImg {position:absolute; top:-20px; left:500px; opacity:0;}
+/* ecoFri */
+
+#ecoFri {
+  box-sizing:border-box;
+  /* padding-left:500px; */
+  padding:40px 0 0 500px;
+  position:relative;
+  width: 1100px;
+  height:408px;
+  margin:200px auto;
+}
+
+#ecoFri h4 {margin-bottom:25px;}
+#ecoFri p.smallP {
+  left:500px;
+  top:20px;
+}
+
+.ecoImg {position:absolute; top:0; left:-20px; opacity:0;}
+
+#global {
+  position:relative;
+  padding-top:40px;
+  width: 1100px;
+  height:317px;
+  margin:400px auto 200px;
+}
+#global h4 {margin-bottom:24px;}
+#global p.smallP {top:20px; left:0;}
+.gloImg {position:absolute;top:0; left:500px; opacity:0;}
+
+/*------------------------history-------------------------*/
+
+
+  /* 나뭇잎 */
+
+  #historyWrap .leaf1 {top:-30%; left:-30%;}
+  #historyWrap .leaf2 {top:-35%; left:235%;}
+  #historyWrap .leaf3 {top:-80%; left:-38%;}
+  #historyWrap .leaf4 {top:1337%; left:193%;}
+
+#historyWrap p.phrase {left:40%;}
+
+ 
+
+/* contents */
+
+#history {width:1100px; margin:300px auto;}
+
+#history > li {
+    position:relative;
+    margin-bottom:40px;
+    width:40%;
+}
+
+#history > li:nth-child(even) {
+    padding-left: 50%;
+    position:relative;
+
+}
+#history > li:nth-child(even) div.circle{
+    content:""; border:1px solid #8ebe3f;
+    border-radius:20px;
+    width:5px; height:5px;
+    position:absolute; top:0; left:calc(50% - 13px);
+    background:#8ebe3f;
+}
+
+#history > li:nth-child(odd) {
+    text-align:right;
+
+}
+#history > li:nth-child(odd) div.circle{
+    content:""; border:1px solid #8ebe3f;
+    border-radius:20px;
+    width:5px; height:5px;
+    position:absolute; top:0; left:calc(110% - 1px);
+    background:#8ebe3f;
+}
+/*가운데 선*/
+#line {position:absolute; top:365px; left:calc(50% - 67px); width:7px; height:95%; overflow:hidden;}
+#fill {
+    position:absolute; width:7px; height:0; background:#8ebe3f;
+}
+
+/*사진들*/
+.organic,
+.award,
+.imSS,
+.honeyS,
+.factory,
+.machine,
+.filed {opacity:0;}
+.organic {padding:50px 50px 0 0;}
+.award {padding:50px 50px 0 0;}
+.imSS {position:absolute; z-index:2; top:130px; left:100px;}
+#imSS {margin-bottom:200px;}
+.honeyS {position:absolute; top:55px; left:855px;}
+.factory {position:absolute; top:162px; left:-43px;}
+#factory {margin-bottom: 300px;}
+.machine {position:absolute; top:10px; left:800px;}
+#machine {margin-bottom:200px;}
+.filed {position:absolute; top:20px; left:-237px;}
+#filed {margin-bottom:100px;}
+
+/* -----------오시는길------------     */
+
+
+/* 오시는길 */
+#address {position:relative; margin-bottom:150px;}
+/*#address h4 {margin-bottom:20px; font-size: 25px;}*/
+#address iframe {
+  width:100%;
+  height:450px;
+  margin:10px 0;
+  border:0;
+
+}
+#address address {width: 100%; position:absolute; top:490px; left:0; line-height: 30px;}
+
+#address span {margin-right:5px; text-indent:-999999999px;background:url(../images/contactIcons.png) no-repeat center/60px; display:inline-block; width:20px;}
+#address span#phone {background-position:left;}
+#address span#mail {background-position:-41px;}
+#address span#location {background-position:-20px;}
+
+
+/* -----------고객지원------------     */
+
+/* 고객입력칸 */
+/*.required {display:none;}*/
+#contactWrap p.phrase {left:45%;}
+#contactWrap #titleWrap {background-image: url(../images/contact.jpg)}
+
+#custInform {width:100%; margin:110px 0; font-size:15px;}
+
+#custInform h4 {margin-bottom:20px; font-size: 25px;}
+#custInform table {width:100%;}
+#custInform tr {height:70px;}
+#custInform tr th { width:5%; text-align:left; color: #555;}
+#custInform tr td {width:95%;}
+#custInform tr td input {padding:3px 10px; width:100%; height:30px; 
+    border:0; border-bottom: 0.5px solid #104d1d; border-radius: 0;}
+
+#custNm {}
+#email {}
+/*
+#select {
+  height:32px;
+  width:120px;
+  margin-left:15px;
+  border: 0.5px solid #104d1d;
+  border-radius: 0;
+  color:#555;
+}
+*/
+#custInform #subjectW td #subject {width:100%;}
+#commentW td {height:90px;}
+#commentW td textarea {
+  width:100%;
+  height:55px;
+  border: 0.5px solid #104d1d;
+  border-radius: 0;
+  padding:10px;
+  font-size:inherit;
+  font-family: inherit;
+}
+
+#send {
+  width:100px;
+  height:45px;
+  margin: 10px 0 0 58px;
+  border:0;
+  background:#000;
+  border-radius:3px;
+  color:#fff;
+}
+#send:hover {background:#006500; color:#fff; transition:0.3s;}
+
+/* -----------녹차원 소식------------     */
+#storyWrap h3 {margin-left:132px;}
+#storyWrap p.en {margin-left:132px;}
+#storyWrap p.phrase {left:55%;}
+#storyWrap #titleWrap {background-image:url(../images/story.jpg)}
+#listWrap {position:relative; width:900px; height:400px; margin:100px auto; overflow:hidden;}
+#story {width:2700px;}
+#story li {margin:0 50px; float:left; width:350px;}
+#story li dl {
+  position: relative;
+  margin: auto;
+  width:350px; height:300px;
+  background: no-repeat center center / cover;
+}
+#story dt {
+  position: absolute;
+  top:350px; left:0;
+  color:#888;
+  font-size: 15px;
+}
+#story dd {position: absolute; top:310px; left:0;}
+#btn span {background:no-repeat; cursor:pointer; position:absolute; top:420px; display:block; width:64px; height:64px; text-indent:-9999999px;}
+#btn #prev {left:40px;background-image:url(../images/prev.png)}
+#btn #next {right:20px;background-image:url(../images/next.png)}
+
+/* footer */
+
+#footer {padding-top: 80px; background: #8ebe3f;}

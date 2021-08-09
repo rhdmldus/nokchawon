@@ -1,0 +1,240 @@
+@import url(common.css);
+
+body {overflow-x:hidden;}
+/* bg */
+#bgWrap {position: absolute; width: 100%; height: 1000px; background: url(../images/bgSmoke.png) no-repeat center 470px/cover, url(../images/bg.jpg) no-repeat center top /cover;overflow:hidden;}
+.smoke1 {width: 30%; position: absolute; top:300px; left:-100px;}
+.smoke2 {width: 30%; position: absolute; top:300px; left:calc(50% - 15%);}
+.smoke3 {width: 30%; position: absolute; top:300px; right:0;}
+
+/* main 주전자*/
+#main {width: 100%; margin: auto;}
+.teapot { position:absolute; top:200px; left:60%; opacity:0;}
+.teacup {position:absolute; top:430px; left:55%; opacity:0;}
+.teaLeaves {position:absolute; top:200px; left:55%; opacity:0;}
+
+/* 첫번째 페이지 (생산가공)*/
+#teaNature {width: 1200px; height:700px; margin:0 auto; }
+#teaWrap {position: absolute; left:calc(50% - 600px); width: 1200px; height:300px; margin: 160px 30px 125px;}
+#teaNature h4 {font-family: tvn; font-size: 70px; position:relative; top:40px;z-index:9;}
+#teaNature h4 span {color: #f09d00;}
+#teaNature p { margin-top:50px; font-size: 24px; font-weight:300; position:relative; top:40px; font-weight: 400;z-index:9;}
+#teaNature a {margin: 30px 0 0 150px; display: block; width: 200px; height: 50px; background: #000; color: #fff; text-align: center; line-height: 50px; position:relative; top:40px; z-index:99;}
+#teaNature a:hover {
+  background:#006500;
+  color:#fff;
+  transition:0.5s;
+}
+
+
+/* 두번째 페이지 (쇼핑몰) */
+/* 녹차원과 함께하는 시간 */
+#gomallWrap { width: 100%; height: 580px;}
+#teaTime { position: relative; width: 900px; height: 580px; margin: auto;
+  padding: 130px;}
+.teatime {opacity:0; position:absolute; top:0; left:0;}
+
+
+#teaTime h3 {
+  font-size: 55px;
+  margin-left: 430px;
+  position:relative;
+  top:20px;
+  opacity:0;
+}
+
+#teaTime h3 span {color:#006500; font-size:70px;}
+
+#teaTime p {
+  font-size: 25px;
+  width: 230px;
+  margin:20px 0 20px 460px;
+  position:relative;
+  top:30px;
+  opacity:0;
+}
+
+#teaTime a {
+    position:relative;
+    z-index:999;
+  display: block;
+  width: 200px; height: 50px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 460px;
+  position:relative;
+  top:30px;
+  opacity:0;
+}
+#teaTime a:hover {
+  background:#006500;
+  color:#fff;
+  transition:0.5s;
+}
+
+/* bestSeller제품소개 */
+#bestSeller {width: 100%; height:800px; margin-top: 156px; background: url(../images/bird.png) no-repeat center top; padding-top:55px;}
+#bestSellerWrap {width: 1200px; margin: auto; position: relative;}
+#bestSellerWrap > h3 {font-size:60px; text-align: center;}
+#bestSellerWrap > p {font-size:20px; text-align: center; margin-top: 10px;}
+#bsCategori {width:380px; margin: auto; height: 45px;}
+#bsCategori > li {float: left;}
+#bsCategori > li > a { position: relaive; display: block; font-size: 25px;font-size:25px; text-align: center; margin: 70px 10px 0 10px;  color:#000; position: relative;}
+#bsCategori > li > a:hover { color:#006500;}
+#bsCategori > li > a.greentea {width:107px;}
+#bsCategori > li > a.powder {width: 132px;}
+#bsCategori > li > a.liquid { width: 81px;}
+
+/*녹차원제품 카테고리 밑에 줄*/
+/*#bsCategori > li > a.greenTea::after {content:""; border-bottom:5px solid #006500; width:100%; position: absolute; top:40px; left:0px; }*/
+/*#bsCategori > li > a:hover::after { width:100%; transition:0.5s;}*/
+.lineOn {position:absolute; top:40px; left:0; width:100%; border-bottom:5px solid #006500;}
+/*#bsCategori > li > a*/
+/* 제품소개 문구 장면전환 */
+#bsCategori > li > p.green {position:absolute; top:250px; left:0px; font-size: 30px; width: 325px; height: 310px; padding: 85px 0 0 70px; box-sizing: border-box; color: #fff;background: #006500;}
+#bsCategori > li > p.purple {position:absolute; top:250px; left:0px; font-size: 30px; width: 325px; height: 310px; padding: 80px 0 0px 65px; box-sizing: border-box; color: #fff;background: #55009b;}
+#bsCategori > li > p.red {position:absolute; top:250px; left:0px; font-size: 30px; width: 325px; height: 310px; padding: 80px 0 0 80px; box-sizing: border-box; color: #fff;background: #cd0000;}
+#bsCategori > li > p span {font-size: 40px;}
+#bsCategori > li > p:not(.on) {display: none;}
+#bsCategori > li > div {
+  position: absolute; top:270px; left:400px; width:660px;
+  /* overflow-x:scroll; */
+  overflow: hidden;
+}
+
+.sliderWrap {width: 1100px;}
+.sliderWrap > li {float:left; }
+.sliderWrap > li a {display:block; background: url(../images/greentea1.png) no-repeat center bottom/150px; width: 220px; height: 250px; text-indent: -99999px;}
+.sliderWrap > li a:hover {transform:translateY(-10px); transition:0.3s}
+/* 녹차티백 */
+/* .greentea {display: none;} */
+
+.greentea li:nth-child(1) a {background-image:url(../images/greentea1.png);background-size: 130px;}
+.greentea li:nth-child(2) a {background-image:url(../images/greentea2.png);background-size: 130px;}
+.greentea li:nth-child(3) a {background-image:url(../images/greentea3.png);}
+.greentea li:nth-child(4) a {background-image:url(../images/greentea4.png);}
+.greentea li:nth-child(5) a {background-image:url(../images/greentea5.png);}
+
+/* 스틱분말 */
+.powder {display: none;}
+
+.powder li:nth-child(1) a {background-image:url(../images/powder1.png);}
+.powder li:nth-child(2) a {background-image:url(../images/powder2.png);}
+.powder li:nth-child(3) a {background-image:url(../images/powder3.png);}
+.powder li:nth-child(4) a {background-image:url(../images/powder4.png);}
+.powder li:nth-child(5) a {background-image:url(../images/powder5.png);}
+/* 액상차 */
+.liquid {display: none;}
+.liquid li:nth-child(1) a {background-image:url(../images/liquid1.png);background-size:130px;}
+.liquid li:nth-child(2) a {background-image:url(../images/liquid2.png);background-size:130px;}
+.liquid li:nth-child(3) a {background-image:url(../images/liquid3.png);background-size:130px;}
+.liquid li:nth-child(4) a {background-image:url(../images/liquid4.png);}
+.liquid li:nth-child(5) a {background-image:url(../images/liquid5.png);}
+
+/* btns */
+#btns {width:880px;}
+#btns li a {position: absolute; top:425px; width: 20px; height: 36px; text-indent:-9999999px; display: block;}
+
+
+#btns li:first-child a  { left:350px; background-image: url(../images/prev.png);}
+#btns li:last-child a { right:100px; background-image: url(../images/next.png);}
+
+
+/* 브랜드소개 */
+#brandIntro {width: 100%; height:785px; background: url(../images/bird.png) no-repeat center top; padding-top:50px;}
+#brandIntro h3 {text-align: center;}
+#brandIntro p {text-align: center; font-size: 20px; margin-bottom: 100px;}
+
+.brandWrap {width: 1060px; margin: auto; }
+
+
+/* 브랜드로고 */
+.brandWrap dl {position:relative;}
+.brandWrap dl dt {position: absolute; display: block; width: 180px; height: 80px; background:url(../images/brandlogo1.png) no-repeat center center; text-indent: -99999px; top:85px; left:calc(50% - 90px);}
+
+.nchWrap dl dt {background-image: url(../images/brandlogo1.png);}
+.l095Wrap dl dt {background-image: url(../images/brandlogo2.png);}
+.hsWrap dl dt {background-image: url(../images/brandlogo3.png);}
+.imssWrap dl dt {background-image: url(../images/brandlogo4.png); margin-right: 0;}
+.beupWrap dl dt {background-image: url(../images/brandlogo5.png);}
+.teafWrap dl dt {background-image: url(../images/brandlogo6.png);}
+.palbWrap dl dt {background-image: url(../images/brandlogo7.png);height: 140px;top:56px }
+
+.teaSWrap dl dt {background-image: url(../images/brandlogo8.png); margin-right: 0; height:120px;top:65px}
+
+
+.brandWrap a {  display: block; float: left; width: 250px; height: 250px; margin-right: 20px; margin-top:20px; color:#fff; text-align: center; overflow: hidden;}
+.nchWrap a {background: url(../images/brand1.png);}
+.l095Wrap a {background: url(../images/brand2.png);}
+.hsWrap a {background: url(../images/brand3.png);}
+.imssWrap a {background: url(../images/brand4.png); margin-right: 0;}
+.beupWrap a {background: url(../images/brand5.png);}
+.teafWrap a {background: url(../images/brand6.png);}
+.palbWrap a {background: url(../images/brand7.png); }
+.teaSWrap a {background: #000; margin-right: 0;  }
+
+/* 브랜드 설명 */
+/* .brandWrap a dl dd {display: none;} */
+.brandWrap a dl dd {position:absolute; top:120px; left:calc(50% - 90px); width:180px;}
+
+.hsWrap a dl dd {}
+.beupWrap a dl dd {}
+.teafWrap a dl dd {}
+.palbWrap a dl dd {}
+.teaSWrap a dl dd {}
+
+/* 녹차원 더 알기 */
+#moreAbout { clear: both; width: 100%; height: 900px; background: url(../images/bgSmoke.png) no-repeat center 500px/cover, url(../images/bird.png) no-repeat center top, url(../images/moreBg.jpg) no-repeat center top/cover; margin-top: 215px; padding-top: 50px;}
+#moreAbout h2 {text-align: center;}
+#moreAbout > p {text-align: center;font-size: 20px; margin-bottom: 115px;}
+#articleWrap {position:relative;}
+#moreAbout article {float: left; box-sizing: border-box; position:relative; }
+#articleWrap #story:hover {box-shadow:-5px 5px 5px rgba(0, 0, 0, 0.5);}
+#articleWrap #certi:hover {box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);}
+#articleWrap #history:hover {box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);}
+#articleWrap #ci:hover { box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);}
+
+
+#articleWrap {width: 1200px; height: 470px; margin:auto;}
+
+ article p a {position:absolute; top:0; left:0;}
+
+#story {
+    width: 530px; height: 470px; background:#3c3354 url(../images/storyCup.png) no-repeat 70px 196px; padding:80px 0 0 60px;
+}
+  #story p:nth-of-type(1){font-size: 50px; color: #fff; margin-top: 10px;}
+  #story p:nth-of-type(2){font-size: 15px; color: #fff; position: absolute; top:70px; left:66px;}
+  #story p:nth-of-type(3){font-size: 20px; color: #fff; width:225px; margin: 40px 0 0 200px;}
+  #story p a { top: 370px; left: 300px; font-size: 15px; color: #fff; display: block; width: 130px; height: 35px; border: 1px solid #fff; color: #fff; text-align: center; line-height: 35px;}
+  #story p a:hover {background-color: rgba(0, 0, 0, 0.82);  transition:0.5s; border-color:#000;}
+  .steam {background: url(../images/storycupSteam.png) no-repeat; width:57px; position: absolute; top:0; left:0; z-index:99;}
+
+
+#certi {width: 670px; height: 233px; background:#94d61f url(../images/certi.png) no-repeat 325px 60px; padding:50px 0 0 25px;}
+  #certi p:nth-of-type(1){font-size: 30px; color: #000; margin-top:10px;}
+  #certi p:nth-of-type(2){font-size: 15px; color: #000; position: absolute; top:35px; left:20;}
+  #certi p:nth-of-type(3){font-size: 20px; color: #000;}
+  #certi p a { top: 180px; left:520px; font-size: 15px; color: #000; display: block; width: 130px; height: 35px; border: 1px solid #000; color: #000; text-align: center; line-height: 35px;}
+  #certi p a:hover {background-color: rgba(0, 0, 0, 0.9); color:#fff;  transition:0.5s;}
+
+#history {width: 335px; height: 237px; background:#00a4ef url(../images/historycon.png) no-repeat 178px 65px; padding:50px 0 0 25px;}
+  #history p:nth-of-type(1){width: 100px;font-size: 25px; color: #fff; margin-top:10px;}
+  #history p:nth-of-type(2){font-size: 15px; color: #000; position: absolute; top:35px; left:20;}
+  #history p:nth-of-type(3){font-size: 20px; color: #000;}
+  #history p a { top: 180px; left: 180px;font-size: 15px; color: #fff; display: block; width: 130px; height: 35px; border: 1px solid #fff; color: #fff; text-align: center; line-height: 35px;}
+  #history p a:hover {background-color: rgba(0, 0, 0, 0.82); color:#fff;  transition:0.5s; border-color:#000;}
+ .svg{position:absolute;}
+#ci {width: 335px; height: 237px; background:#ffffff url(../images/ciLogo.png) no-repeat center center; padding:50px 0 0 25px;}
+  #ci p:nth-of-type(1){font-size: 24px; color: #000; margin-top:10px; position:absolute; top:20px; left:100px;}
+  #ci p:nth-of-type(2){font-size: 15px; color: #000; position: absolute; top:35px; left:20;}
+  #ci p:nth-of-type(3){font-size: 20px; color: #000;}
+  #ci p a { top: 180px; left: 180px; font-size: 15px; color: #000; display: block; width: 130px; height: 35px; border: 1px solid #000; color: #000; text-align: center; line-height: 35px;}
+  #ci p a:hover {background-color: rgba(0, 0, 0, 0.9); color:#fff;  transition:0.5s;}
+/*푸터*/
+/*푸터스모그*/
+.smog1 {position:absolute; bottom:-300px; left:-20%;}
+.smog2 {position:absolute; bottom:-300px; left:50%;}
+.smog3 {position:absolute; bottom:-300px; left:100%;}
+#footerWrap {width: 1053px; margin:auto; background:url(../images/footerLogo.png) no-repeat; padding:0 50px 0 330px; box-sizing: border-box;}
